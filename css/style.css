@@ -295,3 +295,37 @@
 .tennisconticerik2 .kutu.flexfoto .flexbox .yazi p {
   margin: 0; 
 }
+
+.indexcont {
+  width: 1500px;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;  /* Satırları alt alta diz */
+  gap: 20px;              /* Satırlar arası boşluk */
+}
+
+.flex-row {
+  display: flex;
+  margin-top: 50px;
+  gap: 20px;              /* Kutular arası boşluk */
+  justify-content: center; /* Kutuları ortaya hizala */
+}
+
+.kutu {
+  background-color: #c2501b;
+  border: 1px solid #00796b;
+  padding: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(204, 96, 74, 0.1);
+  flex: 1;
+  min-width: 300px;
+  color: white;
+  text-align: center;
+}
+
+.kutu h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #000000;
+}
