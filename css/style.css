@@ -1,0 +1,211 @@
+/* Flex container */
+.container {
+  display: flex;                  /* Flexbox düzenini aktif eder, içindeki kutuları yatay/horizontal hizalar */
+  justify-content: space-evenly;  /* Kutular arasındaki yatay boşluğu eşitler */
+  align-items: center;            /* Kutuları dikey olarak ortalar */
+  height: 30px;                  /* Container yüksekliği, kutuların ortalanabilmesi için gerekli */     
+}
+
+/* Flex item (kutular) */
+.item { 
+  display: flex;                  /* Kutunun içindeki içerik (ikon + yazı) için flexbox aktif */
+  justify-content: center;        /* İçerikteki öğeleri yatayda ortalar */
+  align-items: center;            /* İçerikteki öğeleri dikeyde ortalar */
+  background-color: tomato;       /* Kutunun arka plan rengini kırmızımsı yapar */
+  color: white;                   /* Kutudaki yazı rengini beyaz yapar */
+  padding: 20px 40px;             /* Kutunun iç boşlukları: üst-alt 20px, sağ-sol 40px */
+  border-radius: 10px;            /* Kutunun köşelerini yuvarlatır */
+  text-decoration: none;          /* Eğer kutu linkse alt çizgiyi kaldırır */
+  font-size: 18px;                /* Kutudaki yazı boyutu */
+
+}
+
+#anabaslik  {
+  text-align: center;
+  margin-top: 20; /* İsteğe bağlı: üst boşluk */
+  font-size: 70px; 
+  background-color: yellow;
+}  
+  
+        h1 {
+          text-align: center;
+          margin-top: -10px; /* İsteğe bağlı: üst boşluk */
+          font-size: 70px; 
+        }
+        .containericerik {
+  display: flex;
+  gap: 50px; /* Kutular arası boşluk */
+  padding-top: 120px; /* Üstten boşluk */
+  justify-content: center; /* Kutuları yatayda ortalar */ 
+}
+.box {
+  width: 500px; /* Kutuların genişliği */
+  height: 500px; /* Kutuların yüksekliği */
+  background-color: white; /* Kutuların arka plan rengi */
+  border: 2px solid #ccc; /* Kutuların kenarlık rengi ve kalınlığı */
+  border-radius: 8px; /* Kutuların köşelerini yuvarlatır */
+  padding: 80px; /* Kutuların iç boşlukları */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Hafif gölge efekti */
+  display: flex;          /* Flexbox düzenini aktif eder */
+  background-color: rgba(178, 95, 95, 0.92);
+}
+#badminton-racket {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  display: flex;           
+}
+#badminton-racket2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  display: flex;             
+
+}
+#padelfile {
+  width: 100%;          /* Üstten boşluk bırakır */
+  height: 320;    
+  margin-top: -100px;      
+
+}
+#padel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+ 
+  display: flex;            
+}
+#padel2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  display: flex;            
+}
+.padelcontainer {
+  display: flex;
+  margin-left: 10px;
+  gap: 50px; /* Kutular arası boşluk */
+  margin-top: 250px; /* Üstten boşluk */
+  justify-content: center; /* Kutuları yatayda ortalar */
+}
+
+.padelbox {
+  width: 500px; /* Kutuların genişliği */
+  height: 500px; /* Kutuların yüksekliği */
+  background-color: white; /* Kutuların arka plan rengi */
+  border: 2px solid #ccc; /* Kutuların kenarlık rengi ve kalınlığı */
+  border-radius: 8px; /* Kutuların köşelerini yuvarlatır */
+  padding: 50px; /* Kutuların iç boşlukları */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Hafif gölge efekti */
+  display: flex;          /* Flexbox düzenini aktif eder */
+  background-color: rgba(206, 168, 168, 0.92);
+}
+#tabletennisfile {
+  width: 100%;          /* Üstten boşluk bırakır */
+  height: 400;    
+  margin-top: -100px;      
+
+}
+#table-tennis {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  display: flex;            
+}
+#table-tennis2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  display: flex;            
+}
+#tennis-racket {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  display: flex;            
+}
+#tennisracket2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  display: flex;            
+}
+.tenniscontainer {
+  display: flex;
+  margin-left: 190px;
+  gap: 50px; /* Kutular arası boşluk */
+  margin-top: -300px; /* Üstten boşluk */
+  justify-content: center; /* Kutuları yatayda ortalar */
+ 
+}
+
+.tennisbox {
+  width: 500px; /* Kutuların genişliği */
+  height: 500px; /* Kutuların yüksekliği */
+  background-color: white; /* Kutuların arka plan rengi */
+  border: 2px solid #ccc; /* Kutuların kenarlık rengi ve kalınlığı */
+  border-radius: 8px; /* Kutuların köşelerini yuvarlatır */
+  padding: 50px; /* Kutuların iç boşlukları */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Hafif gölge efekti */
+  display: flex;          /* Flexbox düzenini aktif eder */
+  background-color: rgba(178, 95, 95, 0.92);
+}
+#sayfaortasicont {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; 
+  opacity: 0.7;
+}
+
+#badmintonbackround {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; 
+  opacity: 0.9;
+}
+#tenniscourt {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; 
+  opacity: 0.9;
+}
+#padelcourt {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; 
+  opacity: 0.9;
+}
+#masatenisicourt {
+  position: fixed; /* Arka plan resmi sayfanın tamamını kaplasın */
+  top: 0; /* Üstten 0 konumlandır *//
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; 
+  opacity: 0.9;
+}
