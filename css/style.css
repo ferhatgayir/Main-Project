@@ -157,7 +157,7 @@
 
 .anasayfabutonu {
   position: fixed;
-  margin-left: auto;
+  margin-left: auto; 
   margin-top: 80px;
   background-color: rgb(0, 0, 0);
   color: white; 
@@ -240,5 +240,58 @@
 }
 
 .badmintonconticerik2 .kutu.flexfoto .flexbox .yazi p {
+  margin: 0; 
+}
+.tennisconticerik {
+  width: 1500px;          /* istediğin genişlik */
+  margin: 0 auto;        /* ortaya al */ 
+  height: auto;
+}
+
+.tennisconticerik .kutu {
+  background-color: #c2501b;
+  border: 1px solid #00796b;
+  padding: 15px ; /* kutu içi boşluk */
+  margin-bottom: 20px;   /* kutular arası boşluk */
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(204, 96, 74, 0.1);
+}
+
+.tennisconticerik .kutu h3 {
+  margin-top: 0; 
+  margin-bottom: 10px; 
+  color: #000000;
+  text-align: center;
+}
+#tennisbaslik {
+ text-align: center;
+          margin-top: 50px; /* İsteğe bağlı: üst boşluk */
+          font-size: 70px;
+}
+.tennisconticerik2 .kutu.flexfoto .flexbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.tennisconticerik2 .kutu.flexfoto .flexbox img {
+  width: 150px; 
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.tennisconticerik2 .kutu.flexfoto .flexbox .yazi {
+  flex: 1;
+}
+
+.tennisconticerik .kutu.flexfoto .flexbox .yazi h3 {
+  margin-top: 0;
+  margin-bottom: 10px; 
+  color: #000;
+  text-align: left;
+}
+
+.tennisconticerik2 .kutu.flexfoto .flexbox .yazi p {
   margin: 0; 
 }
