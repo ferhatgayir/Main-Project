@@ -64,52 +64,6 @@
   display: flex;             
 
 }
-#padelfile {
-  width: 100%;          /* Üstten boşluk bırakır */
-  height: 320;    
-  margin-top: -100px;      
-
-}
-#padel {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200px;
- 
-  display: flex;            
-}
-#padel2 {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 200px;
-  display: flex;            
-}
-.padelcontainer {
-  display: flex;
-  margin-left: 10px;
-  gap: 50px; /* Kutular arası boşluk */
-  margin-top: 250px; /* Üstten boşluk */
-  justify-content: center; /* Kutuları yatayda ortalar */
-}
-
-.padelbox {
-  width: 500px; /* Kutuların genişliği */
-  height: 500px; /* Kutuların yüksekliği */
-  background-color: white; /* Kutuların arka plan rengi */
-  border: 2px solid #ccc; /* Kutuların kenarlık rengi ve kalınlığı */
-  border-radius: 8px; /* Kutuların köşelerini yuvarlatır */
-  padding: 50px; /* Kutuların iç boşlukları */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Hafif gölge efekti */
-  display: flex;          /* Flexbox düzenini aktif eder */
-  background-color: rgba(206, 168, 168, 0.92);
-}
-#tabletennisfile {
-  width: 100%;          /* Üstten boşluk bırakır */
-  height: 400;    
-  margin-top: -100px;      
-
-}
 #table-tennis {
   position: fixed;
   top: 0;
@@ -123,6 +77,17 @@
   right: 0;
   width: 200px;
   display: flex;            
+}
+#masatenisicourt {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.8;
+  pointer-events: none; /* tıklamaları engellemesin */
 }
 #tennis-racket {
   position: fixed;
@@ -140,9 +105,9 @@
 }
 .tenniscontainer {
   display: flex;
-  margin-left: 190px;
+  margin-left: 25px;
   gap: 50px; /* Kutular arası boşluk */
-  margin-top: -300px; /* Üstten boşluk */
+  margin-top: 150px; /* Üstten boşluk */
   justify-content: center; /* Kutuları yatayda ortalar */
  
 }
@@ -189,23 +154,91 @@
   z-index: -1; 
   opacity: 0.9;
 }
-#padelcourt {
+
+.anasayfabutonu {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1; 
-  opacity: 0.9;
+  margin-left: auto;
+  margin-top: 80px;
+  background-color: rgb(0, 0, 0);
+  color: white; 
+  padding: 10px 15px;  
+  border-radius: 5px;
+  text-decoration: none; 
+  font-size: 20px;
+  z-index: 10; /* Butonun diğer içeriklerin üstünde görünmesini sağlar */
 }
-#masatenisicourt {
-  position: fixed; /* Arka plan resmi sayfanın tamamını kaplasın */
-  top: 0; /* Üstten 0 konumlandır *//
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+.masatenisiconticerik {
+  width: 1500px;          /* istediğin genişlik */
+  margin: 0 auto;        /* ortaya al */ 
+  height: auto;
+
+}
+
+.masatenisiconticerik .kutu {
+  background-color: #c2501b;
+  border: 1px solid #00796b;
+  padding: 15px ; /* kutu içi boşluk */
+  margin-bottom: 20px;   /* kutular arası boşluk */
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(204, 96, 74, 0.1);
+}
+
+.masatenisiconticerik .kutu h3 {
+  margin-top: 0; 
+  margin-bottom: 10px; 
+  color: #000000;
+  text-align: center;
+}
+.badmintonconticerik {
+  width: 1500px;          /* istediğin genişlik */
+  margin: 0 auto;        /* ortaya al */ 
+  height: auto;
+}
+
+.badmintonconticerik .kutu {
+  background-color: #c2501b;
+  border: 1px solid #00796b;
+  padding: 15px ; /* kutu içi boşluk */
+  margin-bottom: 20px;   /* kutular arası boşluk */
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(204, 96, 74, 0.1);
+}
+
+.badmintonconticerik .kutu h3 {
+  margin-top: 0; 
+  margin-bottom: 10px; 
+  color: #000000;
+  text-align: center;
+}
+#badmintonrulepic {
+  display: flex;
+  width: 20%;
+  margin-left: 600px;
+}
+.badmintonconticerik2 .kutu.flexfoto .flexbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.badmintonconticerik2 .kutu.flexfoto .flexbox img {
+  width: 150px;
+  height: auto;
+  border-radius: 6px;
   object-fit: cover;
-  z-index: -1; 
-  opacity: 0.9;
+}
+
+.badmintonconticerik2 .kutu.flexfoto .flexbox .yazi {
+  flex: 1;
+}
+
+.badmintonconticerik .kutu.flexfoto .flexbox .yazi h3 {
+  margin-top: 0;
+  margin-bottom: 10px; 
+  color: #000;
+  text-align: left;
+}
+
+.badmintonconticerik2 .kutu.flexfoto .flexbox .yazi p {
+  margin: 0; 
 }
