@@ -329,3 +329,16 @@
   margin-bottom: 10px;
   color: #000000;
 }
+footer {
+  text-align: center; /* Metni ortalar */
+  padding: 8px; /* Üst ve alt boşluk */
+}
+footer {
+  background-color: #222; /* Arka plan rengini koyu yapar */
+  color: #eee; /* Yazı rengini açık gri yapar */
+  text-align: center; /* Metni ortalar */
+  padding: 10px 0; /* Üst ve alt boşluk */
+  margin-top: auto; /* Footer'ı sayfanın en altına iter */
+  font-size: 14px; /* Küçük yazı boyutu */
+}
+ 
